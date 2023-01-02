@@ -1,0 +1,43 @@
+body {
+    overflow: hidden;
+}
+
+.regis {
+    min-height: 100vh;
+}
+
+.col{
+    padding: 0 !important;
+}
+
+
+.form-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    align-content: center;
+    background-color: #eefcff;
+    padding: 80px !important;
+}
+
+
+.form{
+    font-family: 'Poppins';
+    font-style: normal;
+    align-items: center;
+    
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 100px;
+    background-color: #56B7CC;
+    
+    
+}
+
+.btn{
+    background-color: #56B7CC;
+}
