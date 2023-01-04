@@ -27,3 +27,16 @@ Route::get('/artikel', function () {
 Route::get('/newArtik', function () {
     return view('newArtik');
 });
+
+Route::get('/homepage', function () {
+    return view('homepage');
+});
+Route::get('/payment', function () {
+    return view('payment');
+});
+Route::get('/ruanginformasi', function () {
+    return view('ruanginformasi');
+});
+Route::get('/ruangkonseling', function () {
+    return view('ruangkonseling');
+});
