@@ -1,5 +1,4 @@
-@extends('partials.navbar')
-@section('navbar')
+@include('partials.navbar')
 
 <!doctype html>
 <html lang="en">
@@ -10,7 +9,7 @@
     <title>Ruang Konseling</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-2.css">
 
 </head>
 
@@ -18,7 +17,7 @@
 
     <section id="content-artikel">
         <div class="container">
-            <h3 class="heading fw-bold d-flex justify-content-center">Tips Healing Penghilang Stress</h3>
+            <h3 class="heading fw-bold d-flex justify-content-center mt-5">Tips Healing Penghilang Stress</h3>
             <p class="txtHead text-secondary fs-6 d-flex justify-content-center">
                 read it in&nbsp<b>5 minutes</b>
             </p>
@@ -76,4 +75,3 @@
 
 </html>
 
-@endsection

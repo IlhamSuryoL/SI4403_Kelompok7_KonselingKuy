@@ -308,3 +308,20 @@ hr{
 .carousel-control-prev{
     width: 5%;
 }
+#makingArt{
+    margin-top: 100px;
+    border-radius: 22px;
+    margin: 25px 300px 75px 300px;
+    background: #EEFCFF;
+    box-shadow: -9px -12px 20px #D6F8FF, 9px 12px 20px rgba(0, 0, 0, 0.25);
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+.promo-title {
+    font-size: 35px;
+    font-weight: 600;
+    /* margin-bottom: 50px; */
+
+}
