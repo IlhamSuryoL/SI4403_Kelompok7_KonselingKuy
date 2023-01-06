@@ -22,33 +22,33 @@
           <p class="h1 fw-bold mb-5 ">Sign up</p>
           <div class="input-group mb-4">
             <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-at"></i></span>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp"
               placeholder="Email">
           </div>
         </div>
         <div class="input-group mb-4">
           <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          <input type="text" class="form-control" id="exampleInputEmail1" name="nama" aria-describedby="emailHelp"
             placeholder="Nama">
         </div>
         <div class="input-group mb-4">
           <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-phone"></i></span>
-          <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          <input type="number" class="form-control" id="exampleInputEmail1" name="nohp" aria-describedby="emailHelp"
             placeholder="Nomor Handphone">
         </div>
         <div class="input-group mb-4">
           <span class="input-group-text" id="basic-addon1"><i class="fa-regular fa-calendar-days"></i></span>
-          <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          <input type="date" class="form-control" id="exampleInputEmail1" name="lahir" aria-describedby="emailHelp"
             placeholder="Tanggal Lahir">
         </div>
         <div class="input-group mb-4">
           <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-lock"></i></span>
-          <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          <input type="password" class="form-control" id="exampleInputEmail1" name="sandi" aria-describedby="emailHelp"
             placeholder="Password">
         </div>
         <div class="input-group mb-4">
           <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-lock"></i></span>
-          <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          <input type="password" class="form-control" id="exampleInputEmail1" name="sandikonfirm" aria-describedby="emailHelp"
             placeholder="Confirm Password">
         </div>
 
