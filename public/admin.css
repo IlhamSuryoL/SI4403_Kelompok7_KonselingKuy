@@ -1,0 +1,71 @@
+body {
+    border-radius: 22px;
+    background: #EEFCFF;
+    margin: 25px 50px 75px 100px;
+    box-shadow: 10px 10px 20px #b8b8b8, -10px -10px 20px #ffffff;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+.navbar{
+    background: white;
+}
+
+.navbar>icon>a:hover {
+    color: blue;
+    border-radius: 40px;
+    background: #e0e0e0;
+    box-shadow: 6px 6px 12px #bebebe,
+        -6px -6px 12px #ffffff;
+}
+
+.dropdown-menu {
+    border: none;
+    background: #e0e0e0;
+    box-shadow: 6px 6px 12px #bebebe,
+        -6px -6px 12px #ffffff;
+}
+
+.dropdown-menu>li>a:hover {
+    border-radius: 5px;
+    background: #e0e0e0;
+    box-shadow: inset 6px 6px 12px #bebebe,
+        inset -6px -6px 12px #ffffff;
+}
+#navbar{
+    border-radius: 6px;
+    background: #121212;
+    box-shadow: 6px 6px 11px #a4a4a4,
+        -6px -6px 11px #ffffff;
+}
+.menu-col{
+    border-radius: 6px;
+    background: #4F4F4F;
+    box-shadow: 6px 6px 11px #a4a4a4,
+        -6px -6px 11px #ffffff;
+}
+.nav-link:hover {
+    border-radius: 6px;
+    background: #e0e0e0;
+    box-shadow: inset 6px 6px 11px #a4a4a4,
+        inset -6px -6px 11px #ffffff;
+}
+.card{
+    border-radius: 6px;
+    background: #e0e0e0;
+    box-shadow: 6px 6px 11px #a4a4a4,
+        -6px -6px 11px #ffffff;
+}
+.display-4{
+    font-weight: bold;
+}
+.card-body-icon{
+    position: absolute;
+    z-index: 0;
+    top: 40px;
+    right: 10px;
+    opacity: 0.4;
+}
+
+

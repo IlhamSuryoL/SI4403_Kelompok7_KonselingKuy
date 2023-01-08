@@ -40,3 +40,15 @@ Route::get('/ruanginformasi', function () {
 Route::get('/ruangkonseling', function () {
     return view('ruangkonseling');
 });
+Route::get('/db', function () {
+    return view('db');
+});
+Route::get('/dataOrder', function () {
+    return view('dataOrder');
+});
+Route::get('/dataPsikolog', function () {
+    return view('dataPsikolog');
+});
+Route::get('/dataUser', function () {
+    return view('dataUser');
+});
