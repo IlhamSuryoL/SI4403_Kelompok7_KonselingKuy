@@ -22,7 +22,7 @@
                 <a class="nav-link" aria-current="page" href="/homepage">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Jadwal Konselor</a>
+                <a class="nav-link" href="/jadwalkonselor">Jadwal Konselor</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/homepage#programtext">Program</a>
@@ -32,9 +32,9 @@
                   Nama
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Profile</a></li>
-                  <li><a class="dropdown-item" href="#">Riwayat Konseling</a></li>
-                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                  <li><a class="dropdown-item" href="/profileuser">Profile</a></li>
+                  <li><a class="dropdown-item" href="/riwayatkonseling">Riwayat Konseling</a></li>
+                  <li><a class="dropdown-item" href="">Logout</a></li>
                 </ul>
               </li>
             </ul>

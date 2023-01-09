@@ -46,9 +46,30 @@ Route::get('/db', function () {
 Route::get('/dataOrder', function () {
     return view('dataOrder');
 });
+Route::get('/jadwalkonselor', function () {
+    return view('jadwalkonselor');
+});
 Route::get('/dataPsikolog', function () {
     return view('dataPsikolog');
 });
 Route::get('/dataUser', function () {
     return view('dataUser');
+});
+Route::get('/addartikel', function () {
+    return view('addartikel');
+});
+Route::get('/homepagekonselor', function () {
+    return view('homepagekonselor');
+});
+Route::get('/profileuserKonselor', function () {
+    return view('profileuserKonselor');
+});
+Route::get('/profileuser', function () {
+    return view('profileuser');
+});
+Route::get('/riwayatkonseling', function () {
+    return view('riwayatkonseling');
+});
+Route::get('/ruanginformasiKonselor', function () {
+    return view('ruanginformasiKonselor');
 });
