@@ -35,19 +35,15 @@
               <img src="asset/ruanginformasi.png" class="card-img-top" alt="...">
             </a>
             <div class="card-body">
-              <a href="ruanginformasi">
                 <p class="card-text">Ruang Informasi</p>
-              </a>
+              
             </div>
           </div>
           <div class="programcard" style="width: 18rem;">
-            <a href="ruangkonseling">
-              <img src="asset/ruangkonseling.png" class="card-img-top" alt="...">
-            </a>
+            <a href="/read_psikolog">
+              <img src="asset/ruangkonseling.png" class="card-img-top" alt="..."></a>
             <div class="card-body">
-              <a href="ruangkonseling">
                 <p class="card-text">Ruang Konseling</p>
-              </a>
             </div>
           </div>
         </div>

@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('transaksis', function (Blueprint $table) {
             $table->id();
+            $table->string('email')->unique();
+            $table->string('name');
+            $table->string('nomor_hp');
+            $table->date('tanggal_lahir');
+            $table->string('keluhan');
             $table->timestamps();
         });
     }

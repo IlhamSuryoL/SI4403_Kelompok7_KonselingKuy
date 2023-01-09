@@ -38,11 +38,8 @@
               Remember me
             </label>
           </div>
-
-
-          {{-- <button class="btn btn-primary"><a href="/homepage"></button> --}}
-      <input class="btn btn-primary" type="submit" value="Done" >
-        <p>Don't have an account? <a href="/">SIgn Up</a></p>
+      <input class="btn btn-primary" type="submit" value="Login" >
+        <p>Don't have an account? <a href="/">Sign Up</a></p>
       </form>
     </div>
   </div>

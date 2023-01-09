@@ -75,6 +75,11 @@ Route::get('/riwayatkonseling', function () {
 Route::get('/ruanginformasiKonselor', function () {
     return view('ruanginformasiKonselor');
 });
+Route::get('/ruanginformasiKonselor', function () {
+    return view('ruanginformasiKonselor');
+});
+Route::get('read_psikolog', [UserController::class, 'read_psikolog']);
+Route::resource('bookingkonsul', UserController::class);
 
 Route::get('register', [UserController::class, 'register'])->name('register');
 Route::post('register', [UserController::class, 'register_action'])->name('register.action');

@@ -1,6 +1,6 @@
-<!doctype html>
-@include('partials.navbar')
 
+@include('partials.navbar')
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -49,7 +49,7 @@
 
       <div class="kontenartikel">
         <div class="judulartikel card" style="width: 21rem;">
-          <img src="asset/artikel1.png" class="card-img-top" alt="...">
+          <img src="asset/ruanginformasi.webp" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Menonton Film dapat menyebabkan ketenangan</h5>
             <p class="card-text">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
@@ -57,7 +57,7 @@
           </div>
         </div>
         <div class="judulartikel card" style="width: 21rem;">
-          <img src="asset/" class="card-img-top" alt="...">
+          <img src="asset/ruanginformasi.webp" class="card-img-top" alt="...">
           <div class="card-body">
               <h5 class="card-title">Tips Healing penghilang stress</h5>
               <p class="card-text">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
@@ -65,7 +65,7 @@
             </div>
         </div>
         <div class="judulartikel card" style="width: 21rem;">
-          <img src="asset/" class="card-img-top" alt="...">
+          <img src="asset/ruanginformasi.webp" class="card-img-top" alt="...">
           <div class="card-body">
               <h5 class="card-title">lorem ipusm dolor sit anow how peach</h5>
               <p class="card-text">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
@@ -76,7 +76,7 @@
 
       <div class="kontenartikel">
         <div class="judulartikel card" style="width: 21rem;">
-          <img src="asset/artikel1.png" class="card-img-top" alt="...">
+          <img src="asset/ruanginformasi.webp" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Menonton Film dapat menyebabkan ketenangan</h5>
             <p class="card-text">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
@@ -84,7 +84,7 @@
           </div>
         </div>
         <div class="judulartikel card" style="width: 21rem;">
-          <img src="asset/" class="card-img-top" alt="...">
+          <img src="asset/ruanginformasi.webp" class="card-img-top" alt="...">
           <div class="card-body">
               <h5 class="card-title">Tips Healing penghilang stress</h5>
               <p class="card-text">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
@@ -92,7 +92,7 @@
             </div>
         </div>
         <div class="judulartikel card" style="width: 21rem;">
-          <img src="asset/" class="card-img-top" alt="...">
+          <img src="asset/ruanginformasi.webp" class="card-img-top" alt="...">
           <div class="card-body">
               <h5 class="card-title">lorem ipusm dolor sit anow how peach</h5>
               <p class="card-text">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
@@ -101,7 +101,7 @@
         </div>
       </div>
 
-
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
 </html>

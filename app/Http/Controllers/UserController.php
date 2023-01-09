@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\psikolog;
+use App\Models\transaksi;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -9,6 +11,24 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+    public function read_psikolog()
+    {
+        $psikologs = psikolog::all();
+        return view('ruangkonseling', ['psikologs' => $psikologs]);
+    }
+    public function store(Request $request)
+    {
+        $store = new transaksi;
+        $store->email = $request->email;
+        $store->name = $request->name;
+        $store->nomor_hp = $request->nomor_hp;
+        $store->tanggal_lahir = $request->tanggal;
+        $store->keluhan = $request->keluhan;
+        $store->save();
+        return view('payment',['store' => $store]);     
+
+    }
+
     public function register()
     {
         $data['title'] = 'Register';

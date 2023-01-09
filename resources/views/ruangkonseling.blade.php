@@ -15,24 +15,24 @@
             <div class="konselor card" style="width: 21rem;">
                 <img src="asset/konselor1.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Gunawan S.Psi., M.Psi., Psikolog</h5>
-                  <p class="card-text">Adib Setiawan, S.Psi., M.Psi., Psikolog adalah Psikolog Klinis yang aktif melayani pasien di Yayasan Praktek Psikolog Indonesia Bintaro dan Yayasan Praktek Psikolog Indonesia Tangsel</p>
+                  <h5 class="card-title">{{$psikologs[0]['name']}}</h5>
+                  <p class="card-text">{{$psikologs[0]['name']}} adalah Psikolog Klinis yang aktif melayani pasien di Yayasan Praktek Psikolog Indonesia Bintaro dan Yayasan Praktek Psikolog Indonesia Tangsel</p>
                   <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#prevmodal1">Preview</button>
                 </div>
             </div>
             <div class="konselor card" style="width: 21rem;">
                 <img src="asset/konselor2.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Amalina Salsabil, M.Psi., Psikolog</h5>
-                    <p class="card-text">Amalina Salsabil, M.Psi., Psikolog adalah seorang Dokter Spesialis Kedokteran Jiwa atau Psikiatri yang aktif melayani pasien di Klinik Anak Mitra.</p>
+                    <h5 class="card-title">{{$psikologs[2]['name']}}</h5>
+                    <p class="card-text">{{$psikologs[2]['name']}} adalah seorang Dokter Spesialis Kedokteran Jiwa atau Psikiatri yang aktif melayani pasien di Klinik Anak Mitra.</p>
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#prevmodal2">Preview</button>
                 </div>
             </div>
             <div class="konselor card" style="width: 21rem;">
                 <img src="asset/konselor2.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Adelina Sarif, Psa Mpsi</h5>
-                    <p class="card-text">Adelina Syarif, S.Psi., M.Psi adalah seorang Psikologi Klinis yang aktif melayani pasien di RS Hermina Depok.</p>
+                    <h5 class="card-title">{{$psikologs[4]['name']}}</h5>
+                    <p class="card-text">{{$psikologs[5]['name']}} adalah seorang Psikologi Klinis yang aktif melayani pasien di RS Hermina Depok.</p>
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#prevmodal3">Preview</button>
                 </div>
             </div>
@@ -42,24 +42,24 @@
             <div class="konselor card" style="width: 21rem;">
                 <img src="asset/konselor1.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Gunawan S.Psi., M.Psi., Psikolog</h5>
-                  <p class="card-text">Adib Setiawan, S.Psi., M.Psi., Psikolog adalah Psikolog Klinis yang aktif melayani pasien di Yayasan Praktek Psikolog Indonesia Bintaro dan Yayasan Praktek Psikolog Indonesia Tangsel</p>
+                  <h5 class="card-title">{{$psikologs[1]['name']}}</h5>
+                  <p class="card-text">{{$psikologs[1]['name']}} adalah Psikolog Klinis yang aktif melayani pasien di Yayasan Praktek Psikolog Indonesia Bintaro dan Yayasan Praktek Psikolog Indonesia Tangsel</p>
                   <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#prevmodal4">Preview</button>
                 </div>
             </div>
             <div class="konselor card" style="width: 21rem;">
                 <img src="asset/konselor2.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Amalina Salsabil, M.Psi., Psikolog</h5>
-                    <p class="card-text">Amalina Salsabil, M.Psi., Psikolog adalah seorang Dokter Spesialis Kedokteran Jiwa atau Psikiatri yang aktif melayani pasien di Klinik Anak Mitra.</p>
+                    <h5 class="card-title">{{$psikologs[3]['name']}}</h5>
+                    <p class="card-text">{{$psikologs[3]['name']}} adalah seorang Dokter Spesialis Kedokteran Jiwa atau Psikiatri yang aktif melayani pasien di Klinik Anak Mitra.</p>
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#prevmodal5">Preview</button>
                 </div>
             </div>
             <div class="konselor card" style="width: 21rem;">
                 <img src="asset/konselor2.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Adelina Sarif, Psa Mpsi</h5>
-                    <p class="card-text">Adelina Syarif, S.Psi., M.Psi adalah seorang Psikologi Klinis yang aktif melayani pasien di RS Hermina Depok.</p>
+                    <h5 class="card-title">{{$psikologs[5]['name']}}</h5>
+                    <p class="card-text">{{$psikologs[5]['name']}} adalah seorang Psikologi Klinis yang aktif melayani pasien di RS Hermina Depok.</p>
                     <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#prevmodal6">Preview</button>
                 </div>
             </div>
@@ -78,14 +78,14 @@
               <div class="prevleft">
               <div class="modalprofile">
                 <img src="asset/konselor1.png" alt="" width="400px">
-                <h1>Gunawan S.Psi., M.Psi., Psikolog</h1>
+                <h1>{{$psikologs[0]['name']}}</h1>
               </div>
               <div class="modaldesc">
                 <h2>Biaya Konsultasi</h2>
                 <p>Rp. 40.000</p>
                 <h2>Informasi Lainnya</h2>
-                <p>Gunawan, S.Psi., M.Psi., Psikolog adalah Psikolog Klinis yang aktif melayani pasien di Yayasan Praktek Psikolog Indonesia Bintaro dan Yayasan Praktek Psikolog Indonesia Tangsel.</p>
-                <p>Gunawan, S.Psi., M.Psi., Psikolog mendapatkan gelar Psikolog Klinis setelah menamatkan pendidikan di Universitas Tarumanagara.</p>
+                <p>{{$psikologs[0]['name']}} adalah Psikolog Klinis yang aktif melayani pasien di Yayasan Praktek Psikolog Indonesia Bintaro dan Yayasan Praktek Psikolog Indonesia Tangsel.</p>
+                <p>{{$psikologs[0]['name']}} mendapatkan gelar Psikolog Klinis setelah menamatkan pendidikan di Universitas Tarumanagara.</p>
                 <p>Beliau dapat memberikan layanan konsultasi psikologis.
                   Harga yang tertera merupakan biaya konsultasi dokter, belum termasuk tindakan lain dan biaya admin dari RS/Klinik (apabila ada)</p>
                 <h2>Jam Operasional</h2>
@@ -103,28 +103,29 @@
               </div>
               </div>
               <div class="formreserv">
-                  <form action="" method="">
+                  <form action="bookingkonsul" method="POST" enctype="multipart/form-data">
+                    @csrf
                     <div class="input mb-3 mt-3">
                       <label for="NamaLengkap" class="form-label">Email</label>
-                      <input type="email" class="form-control" id="NamaLengkap" placeholder="Email" name="Nama Lengkap">
+                      <input type="email" class="form-control" id="NamaLengkap" placeholder="Email" name="email">
                     </div>
                     <div class="input mb-3 mt-3">
                       <label for="NamaLengkap" class="form-label">Nama Lengkap</label>
-                      <input type="text" class="form-control" id="NamaLengkap" placeholder="Nama Kamu" name="Nama Lengkap">
+                      <input type="text" class="form-control" id="NamaLengkap" placeholder="Nama Kamu" name="name">
                     </div>
                     <div class="input mb-3 mt-3">
                       <label for="NamaLengkap" class="form-label">No Handpone</label>
-                      <input type="text" class="form-control" id="NamaLengkap" placeholder="Nomor Handphone" name="Nama Lengkap">
+                      <input type="text" class="form-control" id="NamaLengkap" placeholder="Nomor Handphone" name="nomor_hp">
                     </div>
                     <div class="input mb-3 mt-3">
                       <label for="NamaLengkap" class="form-label">Tanggal Konsultasi</label>
-                      <input type="date" class="form-control" id="NamaLengkap" placeholder="Tanggal Konsultasi" name="Nama Lengkap">
+                      <input type="date" class="form-control" id="NamaLengkap" placeholder="Tanggal Konsultasi" name="tanggal">
                     </div>
                     <div class="input mb-3 mt-3">
                       <label for="Alamat" class="form-label">Keterangan/ Keluhan</label>
-                      <textarea class="form-control" rows="3" id="Alamat" placeholder="Keterangan/Keluhan" name="Alamat KTP"></textarea>
+                      <textarea class="form-control" rows="3" id="Alamat" placeholder="Keterangan/Keluhan" name="keluhan"></textarea>
                     </div>
-                    <button type="button" class="btn">Submit</button>
+                    <button type="submit" class="btn">Submit</button>
                   </form>
               </div>
             </div>

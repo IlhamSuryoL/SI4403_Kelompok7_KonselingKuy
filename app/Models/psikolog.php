@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class psikolog extends Model
 {
     use HasFactory;
+
+    protected $table = "psikologs";
+
+    protected $fillable =[
+        'name','email', 'password', 'nomor_hp', 'tanggal_lahir'
+    ];
+    
 }

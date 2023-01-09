@@ -55,7 +55,7 @@
 
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-          <label class="form-check-label" for="exampleCheck1">By signing up, you’re agree to out  <span class="text-danger fw-bold">Terms and Condition</span> and
+          <label class="form-check-label" for="exampleCheck1">By signing up, you agree to our  <span class="text-danger fw-bold">Terms and Condition</span> and
              <span class="text-danger fw-bold">Privacy Policy </span> </label>
       </div>
 
