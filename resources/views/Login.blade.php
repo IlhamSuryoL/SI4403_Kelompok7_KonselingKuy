@@ -17,18 +17,19 @@
       <img src="../asset/image 3.png" alt="" class="img">
     </div>
     <div class="col form-box">
-      <form class="form">
+      <form action="{{ route('login.action') }}" class="form" method="POST">
+        @csrf
         <div class="mb-3">
           <p class="h1 fw-bold mb-5 ">Login</p>
           <div class="input-group mb-4">
             <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-at"></i></span>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            <input type="email" class="form-control" id="exampleInputEmail1" name="name" aria-describedby="emailHelp"
               placeholder="Email">
           </div>
         </div>
         <div class="input-group mb-4">
           <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-lock"></i></span>
-          <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          <input type="password" class="form-control" id="exampleInputEmail1" name="sandi" aria-describedby="emailHelp"
             placeholder="Password">
         </div>
         <div class="form-check">
@@ -38,7 +39,9 @@
             </label>
           </div>
 
-      <input class="btn btn-primary" type="submit" value="Done">
+
+          {{-- <button class="btn btn-primary"><a href="/homepage"></button> --}}
+      <input class="btn btn-primary" type="submit" value="Done" >
         <p>Don't have an account? <a href="/">SIgn Up</a></p>
       </form>
     </div>

@@ -17,7 +17,8 @@
       <img src="../asset/image 3.png" alt="" class="img">
     </div>
     <div class="col">
-      <form action="" class="form" method="POST">
+      <form action="{{ route('register.action') }}" class="form" method="POST">
+        @csrf
         <div class="mb-3">
           <p class="h1 fw-bold mb-5 ">Sign up</p>
           <div class="input-group mb-4">
@@ -28,7 +29,7 @@
         </div>
         <div class="input-group mb-4">
           <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
-          <input type="text" class="form-control" id="exampleInputEmail1" name="nama" aria-describedby="emailHelp"
+          <input type="text" class="form-control" id="exampleInputEmail1" name="name" aria-describedby="emailHelp"
             placeholder="Nama">
         </div>
         <div class="input-group mb-4">

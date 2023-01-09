@@ -12,22 +12,26 @@ class UserController extends Controller
     public function register()
     {
         $data['title'] = 'Register';
-        return view('user/register', $data);
+        return view('/', $data);
     }
 
     public function register_action(Request $request)
     {
         $request->validate([
-            'name' => 'required',
-            'username' => 'required|unique:tb_user',
-            'password' => 'required',
-            'password_confirm' => 'required|same:password',
+            'email' => 'required',
+            'name' => 'required|unique:users',
+            'nohp' => 'required',
+            'lahir' => 'required',
+            'sandi' => 'required',
+            'sandikonfirm' => 'required|same:sandi',
         ]);
 
         $user = new User([
+            'email' => $request->email,
             'name' => $request->name,
-            'username' => $request->username,
-            'password' => Hash::make($request->password),
+            'nomor_hp' => $request->nohp,
+            'tanggal_lahir' => $request->lahir,
+            'password' => Hash::make($request->sandi),
         ]);
         $user->save();
 
@@ -38,16 +42,16 @@ class UserController extends Controller
     public function login()
     {
         $data['title'] = 'Login';
-        return view('user/login', $data);
+        return view('/login', $data);
     }
 
     public function login_action(Request $request)
     {
         $request->validate([
-            'username' => 'required',
+            'name' => 'required',
             'password' => 'required',
         ]);
-        if (Auth::attempt(['username' => $request->username, 'password' => $request->password])) {
+        if (Auth::attempt(['name' => $request->name, 'password' => $request->sandi])) {
             $request->session()->regenerate();
             return redirect()->intended('/');
         }
