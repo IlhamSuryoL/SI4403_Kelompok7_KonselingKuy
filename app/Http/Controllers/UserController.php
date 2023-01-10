@@ -14,7 +14,7 @@ class UserController extends Controller
     public function read_konsulKonselor()
     {
         $table_konsulKonselor = transaksi::all();
-        return view('ruangkonseling', ['table_konsulKonselor' => $table_konsulKonselor]);
+        return view('riwayatkonselingKonselor', ['table_konsulKonselor' => $table_konsulKonselor]);
     }
     public function read_psikolog()
     {
@@ -31,6 +31,7 @@ class UserController extends Controller
         $store->tanggal_lahir = $request->tanggal;
         $store->keluhan = $request->keluhan;
         $store->biaya += 40000;
+        $store->status = 'menunggu';
         $store->save();
         return view('payment',['store' => $store]);     
 

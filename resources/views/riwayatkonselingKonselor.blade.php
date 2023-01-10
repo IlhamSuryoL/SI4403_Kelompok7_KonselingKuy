@@ -31,9 +31,9 @@
                     <tr>
                       @foreach($table_konsulKonselor as $data)
                       <td scope="col">{{$data->id}}</td>
-                      <td scope="col">{{$data->}}</td>
-                      <td scope="col">{{$data->}}</td>
-                      <td scope="col">{{$data->id}}</td>
+                      <td scope="col">{{$data->name_psikolog}}</td>
+                      <td scope="col">{{$data->created_at}}</td>
+                      <td scope="col">{{$data->biaya}}</td>
                       <td scope="col">{{$data->id}}</td>
                       <td scope="col">{{$data->id}}</td>
                       <td scope="col">Konselor 1</td>

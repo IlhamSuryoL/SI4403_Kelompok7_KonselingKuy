@@ -22,6 +22,7 @@ return new class extends Migration
             $table->date('tanggal_lahir');
             $table->string('keluhan');
             $table->integer('biaya');
+            $table->string('status');
             $table->timestamps();
         });
     }
