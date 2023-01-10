@@ -107,22 +107,22 @@
                     @csrf
                     <div class="input mb-3 mt-3">
                       <label for="NamaLengkap" class="form-label">Email</label>
-                      <input type="email" class="form-control" id="NamaLengkap" placeholder="Email" name="email">
+                      <input type="email" class="form-control" id="NamaLengkap" value="{{auth()->user()->email}}" name="email">
                     </div>
                     <div class="input mb-3 mt-3">
                       <label for="NamaLengkap" class="form-label">Nama Lengkap</label>
-                      <input type="text" class="form-control" id="NamaLengkap" placeholder="Nama Kamu" name="name">
+                      <input type="text" class="form-control" id="NamaLengkap" value="{{auth()->user()->name}}" name="name">
                     </div>
                     <div class="input mb-3 mt-3">
                       <label for="NamaLengkap" class="form-label">No Handpone</label>
-                      <input type="text" class="form-control" id="NamaLengkap" placeholder="Nomor Handphone" name="nomor_hp">
+                      <input type="text" class="form-control" id="NamaLengkap" value="{{auth()->user()->nomor_hp}}" name="nomor_hp">
                     </div>
                     <div class="input mb-3 mt-3">
-                      <label for="NamaLengkap" class="form-label">Tanggal Konsultasi</label>
-                      <input type="date" class="form-control" id="NamaLengkap" placeholder="Tanggal Konsultasi" name="tanggal">
+                      <label for="tanggal" class="form-label">Tanggal Lahir</label>
+                      <input type="date" class="form-control" id="tanggal" value="{{auth()->user()->tanggal_lahir}}" name="tanggal">
                     </div>
                     <div class="input mb-3 mt-3">
-                      <label for="Alamat" class="form-label">Keterangan/ Keluhan</label>
+                      <label for="Alamat" class="form-label">Keterangan/Keluhan</label>
                       <textarea class="form-control" rows="3" id="Alamat" placeholder="Keterangan/Keluhan" name="keluhan"></textarea>
                     </div>
                     <button type="submit" class="btn">Submit</button>

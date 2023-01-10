@@ -19,23 +19,23 @@
                 <div class="input-group mb-4">
                   <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-at"></i></span>
                   <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                    placeholder="Email">
+                    value="{{auth()->user()->email}}">
                 </div>
               </div>
               <div class="input-group mb-4">
                 <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user"></i></span>
                 <input type="text" class="form-control" id="nama" aria-describedby="emailHelp"
-                  placeholder="Nama">
+                  value="{{auth()->user()->name}}">
               </div>
               <div class="input-group mb-4">
                 <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-phone"></i></span>
                 <input type="number" class="form-control" id="nohp" aria-describedby="emailHelp"
-                  placeholder="Nomor Handphone">
+                  value="{{auth()->user()->nomor_hp}}">
               </div>
               <div class="input-group mb-4">
                 <span class="input-group-text" id="basic-addon1"><i class="fa-regular fa-calendar-days"></i></span>
                 <input type="date" class="form-control" id="tanggal" aria-describedby="emailHelp"
-                  placeholder="Tanggal Lahir">
+                  value="{{auth()->user()->tanggal_lahir}}">
               </div>
               <div class="input-group mb-4">
                 <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-lock"></i></span>
