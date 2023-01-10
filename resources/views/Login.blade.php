@@ -23,13 +23,13 @@
           <p class="h1 fw-bold mb-5 ">Login</p>
           <div class="input-group mb-4">
             <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-at"></i></span>
-            <input type="email" class="form-control" id="exampleInputEmail1" name="name" aria-describedby="emailHelp"
+            <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp"
               placeholder="Email">
           </div>
         </div>
         <div class="input-group mb-4">
           <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-lock"></i></span>
-          <input type="password" class="form-control" id="exampleInputEmail1" name="sandi" aria-describedby="emailHelp"
+          <input type="password" class="form-control" id="exampleInputEmail1" name="password" aria-describedby="emailHelp"
             placeholder="Password">
         </div>
         <div class="form-check">

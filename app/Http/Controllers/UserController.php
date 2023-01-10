@@ -68,12 +68,13 @@ class UserController extends Controller
     public function login_action(Request $request)
     {
         $request->validate([
-            'name' => 'required',
+            'email' => 'required',
             'password' => 'required',
         ]);
-        if (Auth::attempt(['name' => $request->name, 'password' => $request->sandi])) {
+
+        if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
             $request->session()->regenerate();
-            return redirect()->intended('/');
+            return redirect()->intended('/homepage');
         }
 
         return back()->withErrors([
@@ -105,6 +106,6 @@ class UserController extends Controller
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return redirect('/');
+        return redirect('/login');
     }
 }
