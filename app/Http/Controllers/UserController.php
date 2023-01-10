@@ -12,15 +12,40 @@ use Illuminate\Support\Facades\Hash;
 class UserController extends Controller
 {
     public function read_konsulKonselor()
-    {
-        $table_konsulKonselor = transaksi::where('name_psikolog','{{auth()->user()->name}}')->get();
+    {  $a = auth()->user()->name;
+        $table_konsulKonselor = transaksi::where('name_psikolog', $a)->get();
         return view('riwayatkonselingKonselor', ['table_konsulKonselor' => $table_konsulKonselor]);
+    }
+    public function read_konsul()
+    {  $a = auth()->user()->name;
+        $table_konsul = transaksi::where('name', $a)->get();
+        return view('riwayatkonseling', ['table_konsul' => $table_konsul]);
     }
     public function read_psikolog()
     {
         $psikologs = User::where('role','psikolog')->get();
         return view('ruangkonseling', ['psikologs' => $psikologs]);
     }
+    
+    
+    public function update(Request $request)
+    {
+        $transaksi = transaksi::all();
+        $update = transaksi::find($request->id);
+        $update->status = $request->status;
+        $update->save();
+        return view('homepagekonselor');     
+    
+    }
+
+    public function destroy(Request $request)
+    {
+        $delete = transaksi::where ('id',$request->id)->delete();
+        $transaksi = transaksi::all();
+        return view('homepagekonselor');
+    }
+
+
     public function store(Request $request)
     {
         $store = new transaksi;

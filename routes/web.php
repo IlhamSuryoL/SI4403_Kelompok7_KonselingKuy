@@ -87,11 +87,14 @@ Route::get('/ruanginformasiKonselor', function () {
 Route::get('read_psikolog', [UserController::class, 'read_psikolog']);
 Route::get('read_artikel', [ArtikelController::class, 'read_artikel']);
 Route::get('read_konsulKonselor', [UserController::class, 'read_konsulKonselor']);
+Route::get('read_konsul', [UserController::class, 'read_konsul']);
 Route::resource('bookingkonsul', UserController::class);
 Route::resource('add_artikel', ArtikelController::class);
-
+Route::post('/editriwayatkonseling', [UserController::class, 'update']);
+Route::post('delete', [UserController::class, 'destroy']);
 Route::get('register', [UserController::class, 'register'])->name('register');
 Route::post('register', [UserController::class, 'register_action'])->name('register.action');
+
 Route::get('login', [UserController::class, 'login'])->name('login');
 Route::post('login', [UserController::class, 'login_action'])->name('login.action');
 

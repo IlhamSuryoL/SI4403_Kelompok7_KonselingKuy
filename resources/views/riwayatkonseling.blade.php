@@ -2,6 +2,11 @@
 @include('partials.navbar')
 <html lang="en">
   <head>
+    <style>
+      #hide{
+        display: none !important;
+      }
+    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Konseling kuy</title>
@@ -24,17 +29,25 @@
                     <th scope="col">Total Harga</th>
                     <th scope="col">Keluhan</th>
                     <th scope="col">Status</th>
+                    <th scope="col">Link Whatsapp</th>
                   </tr>
                 </thead>
                 <tbody>
+                    @foreach($table_konsul as $data)
                     <tr>
-                      <td scope="col">123456</td>
-                      <td scope="col">Konselor 1</td>
-                      <td scope="col">2/1/2023</td>
-                      <td scope="col">40000</td>
-                      <td scope="col">ASDad</td>
-                      <td scope="col">Menunggu</td>
-                    </tr>
+
+                      <td scope="col">{{$data->id}}</td>
+                      <td scope="col">{{$data->name_psikolog}}</td>
+                      <td scope="col">{{$data->created_at}}</td>
+                      <td scope="col">{{$data->biaya}}</td>
+                      <td scope="col">{{$data->keluhan}}</td>
+                      <td scope="col">{{$data->status}}</td>
+                      <td id="{{$data->status == 'Konsul Diterima' ? '' : 'hide' }}" scope="col">
+                        <a href="https://wa.me/qr/GIESVEUBWEZYA1" style="text-decoration: none;">Link</a>
+                      </td>
+                      </tr>
+
+                      @endforeach
                 </tbody>
             </table>
         </div>

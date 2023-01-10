@@ -33,7 +33,7 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="/profileuser">Profile</a></li>
-                  <li><a class="dropdown-item" href="/riwayatkonseling">Riwayat Konseling</a></li>
+                  <li><a class="dropdown-item" href="read_konsul">Riwayat Konseling</a></li>
                   <li><a class="dropdown-item" href="{{ route('logout') }}">Logout</a></li>
                 </ul>
               </li>

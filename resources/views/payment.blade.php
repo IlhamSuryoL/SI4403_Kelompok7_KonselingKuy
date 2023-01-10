@@ -41,7 +41,7 @@
                 <h3>Silahkan tunggu konfirmasi Psikolog.</h3>
 
                 <!-- <h3><a href="https://wa.me/qr/GIESVEUBWEZYA1">Klik disini untuk konseling</a></h3> -->
-                <a type="button" href="/riwayatkonseling" class="btn btn-primary">OK</a>
+                <a type="button" href="read_konsul" class="btn btn-primary">OK</a>
               </div>
             </div>
           </div>
