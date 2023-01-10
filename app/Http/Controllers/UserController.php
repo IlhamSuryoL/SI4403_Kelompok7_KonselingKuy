@@ -13,7 +13,7 @@ class UserController extends Controller
 {
     public function read_konsulKonselor()
     {
-        $table_konsulKonselor = transaksi::all();
+        $table_konsulKonselor = transaksi::where('name_psikolog','{{auth()->user()->name}}')->get();
         return view('riwayatkonselingKonselor', ['table_konsulKonselor' => $table_konsulKonselor]);
     }
     public function read_psikolog()
