@@ -12,17 +12,18 @@
 
       <div class="card addartikel mt-2 mb-3">
         <div class="card-body newartikel">
-            <h2 class="card-title text-center">Riwayat Konseling</h2>
+            <h2 class="card-title text-center">Riwayat Konseling {{auth()->user()->name}}</h2>
         </div>
         <div class="card-text formartikel">
             <table class="table text-center">
                 <thead>
                   <tr>
-                    <th scope="col">Id Transaksi</th>
+                    <th scope="col">ID Transaksi</th>
                     <th scope="col">Nama Psikolog</th>
-                    <th scope="col">Jadwal Waktu</th>>
+                    <th scope="col">Jadwal Konseling</th>
                     <th scope="col">Total Harga</th>
-                    <th scope="col">Action</th>
+                    <th scope="col">Keluhan</th>
+                    <th scope="col">Status</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -30,7 +31,9 @@
                       <td scope="col">123456</td>
                       <td scope="col">Konselor 1</td>
                       <td scope="col">2/1/2023</td>
-                      <td scope="col">180.000</td>
+                      <td scope="col">40000</td>
+                      <td scope="col">ASDad</td>
+                      <td scope="col">Menunggu</td>
                     </tr>
                 </tbody>
             </table>

@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
+use App\Models\Psikolog;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +23,9 @@ Route::get('/', function () {
 
 Route::get('/login', function () {
     return view('Login');
+});
+Route::get('/LoginPsikolog', function () {
+    return view('LoginPsikolog');
 });
 
 Route::get('/artikel', function () {
@@ -85,4 +90,6 @@ Route::get('register', [UserController::class, 'register'])->name('register');
 Route::post('register', [UserController::class, 'register_action'])->name('register.action');
 Route::get('login', [UserController::class, 'login'])->name('login');
 Route::post('login', [UserController::class, 'login_action'])->name('login.action');
+Route::get('LoginPsikolog', [LoginController::class, 'LoginPsikolog'])->name('LoginPsikolog');
+Route::post('LoginPsikolog', [LoginController::class, 'LoginPsikolog_action'])->name('LoginPsikolog.action');
 Route::get('logout', [UserController::class, 'logout'])->name('logout');

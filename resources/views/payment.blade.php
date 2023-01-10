@@ -38,8 +38,10 @@
               <div class="modal-body bodypembayaran">
                 <img src="asset/centanghijau.png" alt="">
                 <h3>Pembayaran Berhasil</h3>
-                <h3><a href="https://wa.me/qr/GIESVEUBWEZYA1">Klik disini untuk konseling</a></h3>
-                <button type="button" class="btn btn-primary">OK</button>
+                <h3>Silahkan tunggu konfirmasi Psikolog.</h3>
+
+                <!-- <h3><a href="https://wa.me/qr/GIESVEUBWEZYA1">Klik disini untuk konseling</a></h3> -->
+                <a type="button" href="/riwayatkonseling" class="btn btn-primary">OK</a>
               </div>
             </div>
           </div>

@@ -40,6 +40,10 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'psikolog' => [
+            'driver' => 'session',
+            'provider' => 'psikologs',
+        ],
     ],
 
     /*
@@ -63,6 +67,10 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
+        ],
+        'psikologs' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Psikolog::class,
         ],
 
         // 'users' => [
@@ -89,6 +97,12 @@ return [
     'passwords' => [
         'users' => [
             'provider' => 'users',
+            'table' => 'password_resets',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+        'psikologs' => [
+            'provider' => 'psikologs',
             'table' => 'password_resets',
             'expire' => 60,
             'throttle' => 60,

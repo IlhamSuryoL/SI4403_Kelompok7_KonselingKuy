@@ -51,6 +51,7 @@ class UserController extends Controller
             'name' => $request->name,
             'nomor_hp' => $request->nohp,
             'tanggal_lahir' => $request->lahir,
+            'role' => 'user',
             'password' => Hash::make($request->sandi),
         ]);
         $user->save();

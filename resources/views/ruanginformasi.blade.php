@@ -17,7 +17,7 @@
             <div class="carousel-caption d-none d-md-block">
               <h5>Ruang Informasi</h5>
               <p>Ruang Informasi yang menyediakan <br>artikel seputar kesehatan mental. Artikel diketik langsung <br>oleh parah psikolog yang terdaftar pada sistem</p>
-              <p><a href="#" class="btn btn-primary mt3">Read more</a></p>
+              <p><a href="#konten" class="btn btn-primary mt3">Read more</a></p>
             </div>
           </div>
           <div class="carousel-item">
@@ -25,7 +25,7 @@
             <div class="carousel-caption d-none d-md-block">
               <h5>Ruang Informasi</h5>
               <p>Ruang Informasi yang menyediakan <br>artikel seputar kesehatan mental. Artikel diketik langsung <br>oleh parah psikolog yang terdaftar pada sistem</p>
-              <p><a href="#" class="btn btn-primary mt3">Read more</a></p>
+              <p><a href="#konten" class="btn btn-primary mt3">Read more</a></p>
             </div>
           </div>
           <div class="carousel-item">
@@ -33,7 +33,7 @@
             <div class="carousel-caption d-none d-md-block">
               <h5>Ruang Informasi</h5>
               <p>Ruang Informasi yang menyediakan <br>artikel seputar kesehatan mental. Artikel diketik langsung <br>oleh parah psikolog yang terdaftar pada sistem</p>
-              <p><a href="#" class="btn btn-primary mt3">Read more</a></p>
+              <p><a href="#konten" class="btn btn-primary mt3">Read more</a></p>
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@
         </button>
       </div>
 
-      <div class="kontenartikel">
+      <div class="kontenartikel" id="konten">
         <div class="judulartikel card" style="width: 21rem;">
           <img src="asset/ruanginformasi.webp" class="card-img-top" alt="...">
           <div class="card-body">
