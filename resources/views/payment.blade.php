@@ -38,6 +38,7 @@
               <div class="modal-body bodypembayaran">
                 <img src="asset/centanghijau.png" alt="">
                 <h3>Pembayaran Berhasil</h3>
+                <h3><a href="https://wa.me/qr/GIESVEUBWEZYA1">Klik disini untuk konseling</a></h3>
                 <button type="button" class="btn btn-primary">OK</button>
               </div>
             </div>
