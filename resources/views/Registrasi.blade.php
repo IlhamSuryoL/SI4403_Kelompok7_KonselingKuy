@@ -17,6 +17,11 @@
       <img src="../asset/image 3.png" alt="" class="img">
     </div>
     <div class="col">
+      @if($errors->any())
+      @foreach($errors->all() as $err)
+      <p class="alert alert-danger">{{ $err }}</p>
+      @endforeach
+      @endif
       <form action="{{ route('register.action') }}" class="form" method="POST">
         @csrf
         <div class="mb-3">

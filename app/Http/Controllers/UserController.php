@@ -96,7 +96,7 @@ class UserController extends Controller
         }
 
         return back()->withErrors([
-            'password' => 'Wrong username or password',
+            'password' => 'Wrong email or password',
         ]);
     }
 
