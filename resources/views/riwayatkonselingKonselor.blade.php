@@ -34,13 +34,10 @@
                       <td scope="col">{{$data->name_psikolog}}</td>
                       <td scope="col">{{$data->created_at}}</td>
                       <td scope="col">{{$data->biaya}}</td>
-                      <td scope="col">{{$data->id}}</td>
-                      <td scope="col">{{$data->id}}</td>
-                      <td scope="col">Konselor 1</td>
-                      <td scope="col">2/1/2023</td>
-                      <td scope="col">40000</td>
-                      <td scope="col">ASDad</td>
-                      <td scope="col">Menunggu</td>
+                      <td scope="col">{{$data->keluhan}}</td>
+                      <td scope="col">{{$data->status}}</td>
+                      <td></td>
+                      @endforeach
                     </tr>
                 </tbody>
             </table>
