@@ -271,30 +271,30 @@ hr{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-weight: 600;
 }
-.carousel-item{
+.iteminformasi{
     height: 85vh;
     min-height: 500px;
 }
-.carousel-caption{
+.captinfo{
     text-align: justify;
     z-index: 2;
-    bottom: 1.5rem;
+    bottom: 0.5rem;
     left: 8%;
 }
-.carousel-caption h5{
-    font-size: 50px;
+.captinfo h5{
+    font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: 25px;
     font-weight: 650;
 }
-.carousel-caption p{
+.captinfo p{
     width: 60%;
     font-size: 20px;
     line-height: 1.4;
     font-weight: 450;
 }
-.carousel-inner::before{
+.cover::before{
     content: '';
     position: absolute;
     width: 100%;

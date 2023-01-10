@@ -42,7 +42,7 @@
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
         <div class="carousel-inner cover">
           <div class="carousel-item iteminformasi active">
-            <img src="/asset/crs2.png" class="d-block w-100" alt="...">
+            <img src="crs2.png" class="d-block w-100" alt="...">
             <div class="carousel-caption captinfo d-none d-md-block">
               <h5>Ruang Informasi</h5>
               <p>Ruang Informasi yang menyediakan <br>artikel seputar kesehatan mental. Artikel diketik langsung <br>oleh parah psikolog yang terdaftar pada sistem</p>
