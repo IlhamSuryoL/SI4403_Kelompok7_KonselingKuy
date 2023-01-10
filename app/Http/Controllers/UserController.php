@@ -11,6 +11,11 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+    public function read_konsulKonselor()
+    {
+        $table_konsulKonselor = transaksi::all();
+        return view('ruangkonseling', ['table_konsulKonselor' => $table_konsulKonselor]);
+    }
     public function read_psikolog()
     {
         $psikologs = User::where('role','psikolog')->get();
@@ -21,9 +26,11 @@ class UserController extends Controller
         $store = new transaksi;
         $store->email = $request->email;
         $store->name = $request->name;
+        $store->name_psikolog = $request->name_psikolog;
         $store->nomor_hp = $request->nomor_hp;
         $store->tanggal_lahir = $request->tanggal;
         $store->keluhan = $request->keluhan;
+        $store->biaya += 40000;
         $store->save();
         return view('payment',['store' => $store]);     
 

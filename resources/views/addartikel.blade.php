@@ -1,3 +1,4 @@
+@include('partials.navbarpsikolog')
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,59 +9,28 @@
     <link rel="stylesheet" href="style-2.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Konseling Kuy</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto mb-1">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Jadwal Konselor</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Program</a>
-            </li>
-            <li class="nav-item dropdown" >
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Nama
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><a class="dropdown-item" href="#">Logout</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
         <div class="card addartikel mt-3 mb-3">
             <div class="card-body newartikel">
                 <h2 class="card-title text-center">Tambah Artikel Baru</h2>
                 <hr>
             </div>
             <div class="card-text formartikel">
-                <form action="">
+                <form action="add_artikel" method="POST" enctype="multipart/form-data">
+                @csrf
                     <div class="input mb-3 mt-3">
                         <label for="judulartikel" class="form-label">Judul Artikel</label>
-                        <input type="email" class="form-control" id="judulartikel" placeholder="Tambahkan Judul Artikel" name="judulartikel">
+                        <input type="text" class="form-control" id="judulartikel" placeholder="Tambahkan Judul Artikel" name="judul">
                     </div>
                     <div class="mb-3">
                         <label for="gambar" class="form-label">Tambah Gambar</label>
-                        <input type="file" class="form-control" id="gambar" name="gambar">
+                        <input type="file" class="form-control" id="gambar" name="image">
                     </div>
                     <div class="input mb-3 mt-3">
                         <label for="Alamat" class="form-label">Tulis Konten</label>
-                        <textarea class="form-control" rows="3" id="Alamat" placeholder="Tambahkan konten" name="Alamat KTP"></textarea>
+                        <textarea class="form-control" rows="3" id="Alamat" placeholder="Tambahkan konten" name="konten"></textarea>
                     </div>
                     <button type="button" class="btn btnartikel" data-bs-toggle="modal" data-bs-target="#paymentmodal">Submit</button>
-                    <button type="button" class="btn btn-danger">Cancel</button>
-                </form>
+                    <a type="button" href="ruanginformasiKonselor" class="btn btn-danger">Cancel</a>
             </div>
         </div>
 
@@ -70,7 +40,9 @@
               <div class="modal-body bodypembayaran">
                 <img src="asset/centanghijau.png" alt="">
                 <h3>Artikel Berhasil Diunggah</h3>
-                <button type="button" class="btn btn-primary">OK</button>
+                <button type="submit" class="btn btn-primary">OK</button>
+                </form>
+
               </div>
             </div>
           </div>

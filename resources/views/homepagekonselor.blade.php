@@ -30,7 +30,7 @@
         <h1 class="programtitle" id="teksprogram">Program</h1>
         <div class="programbody">
           <div class="programcard" style="width: 18rem;">
-            <a href="/ruanginformasiKonselor"><svg xmlns="http://www.w3.org/2000/svg" width="250" height="250" fill="currentColor" class="bi bi-info-square" viewBox="0 0 16 16">
+            <a href="/read_artikel"><svg xmlns="http://www.w3.org/2000/svg" width="250" height="250" fill="currentColor" class="bi bi-info-square" viewBox="0 0 16 16">
               <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
               <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
             </svg></a>
@@ -39,7 +39,7 @@
             </div>
           </div>
           <div class="programcard" style="width: 18rem;">
-            <svg width="250" height="250" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <a href="read_konsulKonselor"><svg width="250" height="250" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <rect width="20" height="21" fill="url(#pattern0)"/>
               <defs>
               <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -48,7 +48,7 @@
               <image id="image0_216_48" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACzUlEQVR4nO2bvW5TMRiGHwnRwNyBHzHRmTsol1AJGLgLysTCjzhbwshNsDFxCQwBARIMsBM1VKISDDATZOEKaJNzbMf5zo/fR/JSuW765NV7bLcBIYQQQgghhBBCiLI4B9wFXgM/gYUGC+/iFbAPjNaVfAX4ILE0heu9d5WcZEkmSnZSsl1dqCaIcnAnRbTrZIkmysE0RfQPiSY2aM5ZNEozSQ4kGpvwSDQSzZBqSolGomk7hUo07YtTddC+VHU0Ek3biVOiaV+SqoMCO1r8QaKNkGgjJNoIiTZCoo2QaCMk2giJLkn0FvAE+ALMgYn/Wsh8y1NcyGvbhJ9sC02WfN8kcr7lmBj7ybbQsmQeRs63HIfGfrItNF/yfQeR8y3HgbGfbAstq4Jx5HzLMTb2k22hLS9vHvEwnLSQ7N4/DEtgIdE2SLQREm3EN+ApsAtsA2eASykLqaPrOU8mJNqIdbd3Q7/r6IToEu46OiG6hLuOTohedsKbR863rpBUbgDv/Cdp3wB7bVfHOHJ+1+86HI9XrHffSnQJdx1Vw9oPLEQPnduBb2SQbIlezVngeS7ZEl2PO3I/C5R9s24hic6XbLcbWYlE/+UecI102bWfEZfo/3cXX9eQ/ZYaJJpTW7g62XWdfUui4/fJscl2h5paSk501dC5oclulFyy6Cpwy9aUbHeoCaJE0VWg5BDZwZQmuoqUnE12SaKrRMlZZJciulpT8vFwh5okShBdZZIctLtYxaLHYwbs9EFyn0XP+iS5r6JnfZPcR9GfgasNv9N14HuGn+XerGwMTfIxI/+X6qMuSGagkv/lxQYkp7yOwVO11cmlsSfJNlxUku247JNd+c4+2vSDT5yuE3VyBBeARxHzR36frSRHsp9QAe5QIyKZduWfzYfMDvDrxMNNsjfAwxXbt5jOFgF8PCF46jvbPSAF+XgJfPIJbro63Ti/Adrs/Ie+YbKPAAAAAElFTkSuQmCC"/>
               </defs>
               </svg>
-              
+              </a>
             <div class="card-body">
               <p class="card-text">Riwayat Konseling</p>
             </div>

@@ -1,5 +1,11 @@
 @include('partials.navbar')
 <!doctype html>
+<style>
+  #tes{
+    display: none !important
+  }
+
+</style>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -80,6 +86,10 @@
                     <div class="input mb-3 mt-3">
                       <label for="Alamat" class="form-label">Keterangan/Keluhan</label>
                       <textarea class="form-control" rows="3" id="Alamat" placeholder="Keterangan/Keluhan" name="keluhan"></textarea>
+                    </div>
+                    <div  id="tes" class="input mb-3 mt-3">
+                      <label for="NamaLengkap" class="form-label">Nama Lengkap</label>
+                      <input type="text" class="form-control" id="NamaLengkap" value="{{$data->name}}" name="name_psikolog">
                     </div>
                     <button type="submit" class="btn">Submit</button>
                   </form>

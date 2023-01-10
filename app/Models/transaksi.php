@@ -11,6 +11,6 @@ class transaksi extends Model
     protected $table = "transaksis";
 
     protected $fillable =[
-        'email','name', 'nomor_hp', 'tanggal_lahir','keluhan'
+        'email','name','name_psikolog', 'nomor_hp', 'tanggal_lahir','keluhan','biaya'
     ];
 }
