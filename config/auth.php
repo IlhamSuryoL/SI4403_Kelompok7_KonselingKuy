@@ -69,7 +69,7 @@ return [
             'model' => App\Models\User::class,
         ],
         'psikologs' => [
-            'driver' => 'eloquent',
+            'driver' => 'database',
             'model' => App\Models\Psikolog::class,
         ],
 

@@ -55,7 +55,7 @@ class LoginController extends Controller
             'emailpsikolog' => 'required',
             'passwordpsikolog' => 'required',
         ]);
-        if (Auth::guard('psikolog')->attempt(['email' => $request->emailpsikolog, 'password' => $request->passwordpsikolog])) {
+        if (Auth::attempt(['email' => $request->emailpsikolog, 'password' => $request->passwordpsikolog])) {
             dd ($request);
             $request->session()->regenerate();
             return redirect()->intended('/homepage');

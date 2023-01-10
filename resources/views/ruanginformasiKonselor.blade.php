@@ -1,5 +1,5 @@
 <!doctype html>
-@include('partials.navbar')
+@include('partials.navbarpsikolog')
 <html lang="en">
   <head>
     <meta charset="utf-8">

@@ -13,7 +13,7 @@ class UserController extends Controller
 {
     public function read_psikolog()
     {
-        $psikologs = psikolog::all();
+        $psikologs = User::where('role','psikolog')->get();
         return view('ruangkonseling', ['psikologs' => $psikologs]);
     }
     public function store(Request $request)
@@ -75,7 +75,16 @@ class UserController extends Controller
 
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
             $request->session()->regenerate();
+            $findrole = Auth::getUser();
+            if ($findrole -> role == 'user'){
             return redirect()->intended('/homepage');
+        }
+            if ($findrole -> role == 'psikolog'){
+            return redirect()->intended('/homepagekonselor');
+        }
+            if ($findrole -> role == 'psikolog'){
+            return redirect()->intended('/homepagekonselor');
+        }
         }
 
         return back()->withErrors([

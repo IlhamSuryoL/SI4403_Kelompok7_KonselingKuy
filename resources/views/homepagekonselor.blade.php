@@ -1,3 +1,4 @@
+@include('partials.navbarpsikolog')
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,36 +9,6 @@
     <link rel="stylesheet" href="konselor.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Konseling Kuy</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto mb-1">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Jadwal Konselor</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Program</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                {{auth()->user()->name}}
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Profile</a></li>
-                  <li><a class="dropdown-item" href="#">Logout</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
 
       <section id="home">
         <div class="homeleft">
@@ -56,13 +27,13 @@
           <path fill="#E1F1FF" fill-opacity="1" d="M0,128L48,154.7C96,181,192,235,288,234.7C384,235,480,181,576,154.7C672,128,768,128,864,154.7C960,181,1056,235,1152,240C1248,245,1344,203,1392,181.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
         </svg>
         <div class="programkk">
-        <h1 class="programtitle">Program</h1>
+        <h1 class="programtitle" id="teksprogram">Program</h1>
         <div class="programbody">
           <div class="programcard" style="width: 18rem;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="250" height="250" fill="currentColor" class="bi bi-info-square" viewBox="0 0 16 16">
+            <a href="/ruanginformasiKonselor"><svg xmlns="http://www.w3.org/2000/svg" width="250" height="250" fill="currentColor" class="bi bi-info-square" viewBox="0 0 16 16">
               <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
               <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-            </svg>
+            </svg></a>
             <div class="card-body">
               <p class="card-text">Ruang Informasi</p>
             </div>
