@@ -1,4 +1,4 @@
-@include('partials.navbar')
+@include('partials.navbarpsikolog')
 
 <!doctype html>
 <html lang="en">

@@ -21,6 +21,28 @@ class ArtikelController extends Controller
         $artikel = Artikel::all();
         return view('ruanginformasiKonselor', ['artikel' => $artikel]);
     }
+    
+    public function read_artikeluser()
+    {
+        $artikel = Artikel::all();
+        return view('ruanginformasi', ['artikel' => $artikel]);
+    }
+    public function open_artikel(Request $request)
+    {        
+        $open_artikel = Artikel::where ('id',$request -> id)->get();;
+        if($open_artikel){
+            return view('artikel', ['open_artikel' => $open_artikel]);
+        }
+        
+    }
+    public function open_artikelPsikolog(Request $request)
+    {        
+        $open_artikel = Artikel::where ('id',$request -> id)->get();;
+        if($open_artikel){
+            return view('artikelPsikolog', ['open_artikel' => $open_artikel]);
+        }
+        
+    }
     /**
      * Show the form for creating a new resource.
      *

@@ -1,6 +1,11 @@
 <!doctype html>
 @include('partials.navbarpsikolog')
 <html lang="en">
+  <style>
+    #hide{
+      display: none !important;
+    }
+  </style>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,7 +66,14 @@
           <div class="card-body">
             <h5 class="card-title">{{$data->judul}}</h5>
             <p class="card-text">{{$data->konten}}</p>
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#prevmodal1">Preview</button>
+            <form action="open_artikelPsikolog" method="POST" enctype="multipart/form-data">
+          @csrf
+          <div id="hide" class="input mb-3 mt-3">
+            <label for="NamaLengkap" class="form-label">id</label>
+            <input type="text" class="form-control" id="NamaLengkap" value="{{$data->id}}" name="id">
+          </div>
+          <button type="submit" class="btn" data-bs-toggle="modal">Preview</button>
+        </form>
           </div>
         </div>
         <!-- <div class="judulartikel card" style="width: 21rem;">

@@ -30,7 +30,7 @@
                         <textarea class="form-control" rows="3" id="Alamat" placeholder="Tambahkan konten" name="konten"></textarea>
                     </div>
                     <button type="button" class="btn btnartikel" data-bs-toggle="modal" data-bs-target="#paymentmodal">Submit</button>
-                    <a type="button" href="ruanginformasiKonselor" class="btn btn-danger">Cancel</a>
+                    <a type="button" href="/homepagekonselor" class="btn btn-danger">Cancel</a>
             </div>
         </div>
 

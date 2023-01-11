@@ -31,7 +31,7 @@
         <h1 id="programtext" class="programtitle">Program</h1>
         <div class="programbody">
           <div class="programcard" style="width: 18rem;">
-            <a href="ruanginformasi">
+            <a href="read_artikeluser">
               <img src="asset/ruanginformasi.png" class="card-img-top" alt="...">
             </a>
             <div class="card-body">

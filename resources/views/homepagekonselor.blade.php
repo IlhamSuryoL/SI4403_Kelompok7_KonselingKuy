@@ -16,7 +16,7 @@
           <p class="homedesc">Teman yang siap menemanimu bercerita dan menenangkanmu disegala kondisi </p>
         </div>
         <div class="homeright">
-          <img src="/asset/home2.png" alt="">
+          <img src="/asset/home2.jpeg" alt="">
         </div>
       </section>
 

@@ -9,8 +9,8 @@
   </head>
   <body>
 
-     <section class="navbarWeb">
-     <nav class="navbar navbar-expand-lg bg-light">
+     <section class="navbarWeb" >
+     <nav class="navbar navbar-expand-lg bg-light" style="z-index: 99;">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Konseling Kuy</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   {{auth()->user()->name}}
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu" >
                   <li><a class="dropdown-item" href="/profileuser">Profile</a></li>
                   <li><a class="dropdown-item" href="read_konsul">Riwayat Konseling</a></li>
                   <li><a class="dropdown-item" href="{{ route('logout') }}">Logout</a></li>

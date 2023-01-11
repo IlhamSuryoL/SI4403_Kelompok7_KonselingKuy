@@ -86,6 +86,9 @@ Route::get('/ruanginformasiKonselor', function () {
 });
 Route::get('read_psikolog', [UserController::class, 'read_psikolog']);
 Route::get('read_artikel', [ArtikelController::class, 'read_artikel']);
+Route::post('open_artikel', [ArtikelController::class, 'open_artikel']);
+Route::post('open_artikelPsikolog', [ArtikelController::class, 'open_artikelPsikolog']);
+Route::get('read_artikeluser', [ArtikelController::class, 'read_artikeluser']);
 Route::get('read_konsulKonselor', [UserController::class, 'read_konsulKonselor']);
 Route::get('read_konsul', [UserController::class, 'read_konsul']);
 Route::get('db', [UserController::class, 'read_all']);
