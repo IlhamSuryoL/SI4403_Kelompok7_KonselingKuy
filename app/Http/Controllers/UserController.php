@@ -11,6 +11,14 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+    public function read_all()
+    {   $transaksi = transaksi::all();
+        $psikologs = User::where('role','psikolog')->get();
+        return view('db', 
+        ['transaksi' => $transaksi], 
+        ['psikologs' => $psikologs], 
+    );
+    }
     public function read_konsulKonselor()
     {  $a = auth()->user()->name;
         $table_konsulKonselor = transaksi::where('name_psikolog', $a)->get();
@@ -20,6 +28,21 @@ class UserController extends Controller
     {  $a = auth()->user()->name;
         $table_konsul = transaksi::where('name', $a)->get();
         return view('riwayatkonseling', ['table_konsul' => $table_konsul]);
+    }
+    public function read_konsulAdmin()
+    {  
+        $table_konsul = transaksi::all();
+        return view('dataOrder', ['table_konsul' => $table_konsul]);
+    }
+    public function read_userbyAdmin()
+    {  
+        $user = User::where('role','user')->get();;
+        return view('dataUser', ['user' => $user]);
+    }
+    public function read_psikologbyAdmin()
+    {  
+        $user = User::where('role','psikolog')->get();;
+        return view('dataPsikolog', ['user' => $user]);
     }
     public function read_psikolog()
     {
@@ -37,12 +60,36 @@ class UserController extends Controller
         return view('homepagekonselor');     
     
     }
+    public function update2(Request $request)
+    {
+        $transaksi = transaksi::all();
+        $update = transaksi::find($request->id);
+        $update->status = $request->status;
+        $update->save();
+        return view('db');     
+    
+    }
 
     public function destroy(Request $request)
     {
         $delete = transaksi::where ('id',$request->id)->delete();
         $transaksi = transaksi::all();
         return view('homepagekonselor');
+    }
+    public function destroy2(Request $request)
+    {
+        $delete = transaksi::where ('id',$request->id)->delete();
+        return redirect()->intended('/db');
+    }
+    public function destroyuser(Request $request)
+    {
+        $delete = User::where ('id',$request->id)->delete();
+        return redirect()->intended('/db');
+    }
+    public function destroypsikolog(Request $request)
+    {
+        $delete = User::where ('id',$request->id)->delete();
+        return redirect()->intended('/db');
     }
 
 
@@ -115,8 +162,8 @@ class UserController extends Controller
             if ($findrole -> role == 'psikolog'){
             return redirect()->intended('/homepagekonselor');
         }
-            if ($findrole -> role == 'psikolog'){
-            return redirect()->intended('/homepagekonselor');
+            if ($findrole -> role == 'admin'){
+            return redirect()->intended('/db');
         }
         }
 

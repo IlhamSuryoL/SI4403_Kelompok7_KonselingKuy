@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+    <style>
+        #hide{
+            display: none !important;
+        }
+    </style>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -87,30 +92,82 @@
                             <table class="table">
                                 <thead>
                                     <tr class="table-dark text-center">
-                                        <th scope="col">Id Number</th>
-                                        <th scope="col">Doctor</th>
-                                        <th scope="col">Email</th>
-                                        <th scope="col">Phone Number</th>
-                                        <th scope="col">Type House</th>
-                                        <th scope="col">Message</th>
+                                        <th scope="col">ID Transaksi</th>
+                                        <th scope="col">Nama pasien</th>
+                                        <th scope="col">Nama Psikolog</th>
+                                        <th scope="col">Jadwal Konseling</th>
+                                        <th scope="col">Total Harga</th>
+                                        <th scope="col">Keluhan</th>
+                                        <th scope="col">Status</th>
                                         <th scope="col">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                        <tr class="table-light text-center">
-                                            <!-- <th scope="row">1</th> -->
-                                            <td><a href="action/modal-admin.php?id=" class="btn btn-info">Detail</a>
-                                                <a href="action/delete.php?id=" data-toggle="tooltip" title="Delete" class="btn text-danger">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-square">
-                                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                                        <line x1="9" y1="9" x2="15" y2="15"></line>
-                                                        <line x1="15" y1="9" x2="9" y2="15"></line>
-                                                    </svg>
-                                                </a>
-                                            </td>
-                                        </tr>
+                                    @foreach($table_konsul as $data)
+                                    <tr class="table-light text-center">
+                                        <!-- <th scope="row">1</th> -->
+                                        <!-- <td><a href="action/modal-admin.php?id=" class="btn btn-info">Detail</a>
+                                            <a href="action/delete.php?id=" data-toggle="tooltip" title="Delete" class="btn text-danger">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-square">
+                                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                                                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                                                </svg>
+                                            </a>
+                                        </td> -->
+                                        <td scope="col">{{$data->id}}</td>
+                                        <td scope="col">{{$data->name}}</td>
+                                        <td scope="col">{{$data->name_psikolog}}</td>
+                                        <td scope="col">{{$data->created_at}}</td>
+                                        <td scope="col">{{$data->biaya}}</td>
+                                        <td scope="col">{{$data->keluhan}}</td>
+                                        <td scope="col">{{$data->status}}</td>
+                                        <td>
+                            <form action="/editriwayatkonselingAdmin" enctype="multipart/form-data" method="POST">
+                                @csrf
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop{{$data->id}}">
+                                    Update
+                                </button>
 
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop{{$data->id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Update Status</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <select name="status" class="form-select" aria-label="Default select example">
+                                                    <option value="Konsul Diterima">Konsul Diterima</option>
+                                                    <option value="Selesai">Selesai</option>
+                                                </select>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <div id="hide" class="input mb-3 mt-3">
+                                                    <label for="judulartikel" class="form-label">Judul Artikel</label>
+                                                    <input type="text" class="form-control" id="judulartikel" value="{{$data->id}}" name="id">
+                                                </div>
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <input type="submit" class="btn btn-primary">
 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <form action="/deleteriwayatkonselingAdmin" enctype="multipart/form-data" method="POST">
+                            @csrf
+                                <div id="hide" class="input mb-3 mt-3">
+                                    <label for="judulartikel" class="form-label">get id</label>
+                                    <input type="text" class="form-control" id="judulartikel" value="{{$data->id}}" name="id">
+                                </div>
+                                <input class="btn btn-danger mt-2" name="delete" type="submit" value="Delete">
+                            </form>
+                        </td>
+                                    </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>

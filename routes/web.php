@@ -48,21 +48,21 @@ Route::get('/ruanginformasi', function () {
 Route::get('/ruangkonseling', function () {
     return view('ruangkonseling');
 });
-Route::get('/db', function () {
-    return view('db');
-});
-Route::get('/dataOrder', function () {
-    return view('dataOrder');
-});
+// Route::get('/db', function () {
+//     return view('db');
+// });
+// Route::get('/dataOrder', function () {
+//     return view('dataOrder');
+// });
 Route::get('/jadwalkonselor', function () {
     return view('jadwalkonselor');
 });
 Route::get('/dataPsikolog', function () {
     return view('dataPsikolog');
 });
-Route::get('/dataUser', function () {
-    return view('dataUser');
-});
+// Route::get('/dataUser', function () {
+//     return view('dataUser');
+// });
 Route::get('/addartikel', function () {
     return view('addartikel');
 });
@@ -88,10 +88,18 @@ Route::get('read_psikolog', [UserController::class, 'read_psikolog']);
 Route::get('read_artikel', [ArtikelController::class, 'read_artikel']);
 Route::get('read_konsulKonselor', [UserController::class, 'read_konsulKonselor']);
 Route::get('read_konsul', [UserController::class, 'read_konsul']);
+Route::get('db', [UserController::class, 'read_all']);
+Route::get('dataOrder', [UserController::class, 'read_konsulAdmin']);
+Route::get('dataUser', [UserController::class, 'read_userbyAdmin']);
+Route::get('dataPsikolog', [UserController::class, 'read_psikologbyAdmin']);
 Route::resource('bookingkonsul', UserController::class);
 Route::resource('add_artikel', ArtikelController::class);
 Route::post('/editriwayatkonseling', [UserController::class, 'update']);
+Route::post('/editriwayatkonselingAdmin', [UserController::class, 'update2']);
 Route::post('delete', [UserController::class, 'destroy']);
+Route::post('/deleteriwayatkonselingAdmin', [UserController::class, 'destroy2']);
+Route::post('/deleteuserbyAdmin', [UserController::class, 'destroyuser']);
+Route::post('/deletepsikologbyAdmin', [UserController::class, 'destroypsikolog']);
 Route::get('register', [UserController::class, 'register'])->name('register');
 Route::post('register', [UserController::class, 'register_action'])->name('register.action');
 

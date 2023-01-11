@@ -1,5 +1,10 @@
 <!doctype html>
 <html lang="en">
+<style>
+    #hide {
+        display: none !important;
+    }
+</style>
 
 <head>
     <!-- Required meta tags -->
@@ -88,29 +93,44 @@
                                 <thead>
                                     <tr class="table-dark text-center">
                                         <th scope="col">Id Number</th>
-                                        <th scope="col">Name Psikolog</th>
+                                        <th scope="col">Name</th>
                                         <th scope="col">Email</th>
                                         <th scope="col">Phone Number</th>
-                                        <th scope="col">Type House</th>
-                                        <th scope="col">Message</th>
+                                        <th scope="col">Birth Date</th>
                                         <th scope="col">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                @foreach($user as $data)
+                                    <tr class="table-light text-center">
+                                        <!-- <th scope="row">1</th> -->
+                                        <!-- <td><a href="action/modal-admin.php?id=" class="btn btn-info">Detail</a>
+                                            <a href="action/delete.php?id=" data-toggle="tooltip" title="Delete" class="btn text-danger">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-square">
+                                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                                                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                                                </svg>
+                                            </a>
+                                        </td> -->
+                                        <td scope="col">{{$data->id}}</td>
+                                        <td scope="col">{{$data->name}}</td>
+                                        <td scope="col">{{$data->email}}</td>
+                                        <td scope="col">{{$data->nomor_hp}}</td>
+                                        <td scope="col">{{$data->tanggal_lahir}}</td>
+                                        <td>
 
-                                            <tr class="table-light text-center">
-                                            <!-- <th scope="row">1</th> -->
-                                            <td><a href="action/modal-admin.php?id=" class="btn btn-info">Detail</a>
-                                                <a href="action/delete.php?id=" data-toggle="tooltip" title="Delete" class="btn text-danger">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-square">
-                                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                                        <line x1="9" y1="9" x2="15" y2="15"></line>
-                                                        <line x1="15" y1="9" x2="9" y2="15"></line>
-                                                    </svg>
-                                                </a>
-                                            </td>
-                                        </tr>
-
+                                            <form action="/deletepsikologbyAdmin" enctype="multipart/form-data" method="POST">
+                                                @csrf
+                                                <div id="hide" class="input mb-3 mt-3">
+                                                    <label for="judulartikel" class="form-label">get id</label>
+                                                    <input type="text" class="form-control" id="judulartikel" value="{{$data->id}}" name="id">
+                                                </div>
+                                                <input class="btn btn-danger mt-2" name="delete" type="submit" value="Delete Account">
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>

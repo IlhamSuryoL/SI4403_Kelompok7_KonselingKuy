@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="en">
-
+<style>
+      #hide{
+        display: none !important;
+      }
+    </style>
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -55,7 +59,7 @@
                         </li>
                         <li class="nav-item">
                             <a href="dataOrder" class="nav-link text-white">
-                                Daftar Order</a>
+                                Daftar Konsultasi</a>
                             <hr class="bg-dark">
                         </li>
                         <li class="nav-item">
@@ -90,12 +94,38 @@
                                         <circle cx="12" cy="7" r="4"></circle>
                                     </svg>
                                 </div>
-                                <h5 class="card-title">Total Order</h5>
+                                <h5 class="card-title">Total Riwayat Konsultasi</h5>
                                 <div class="display-4">
-
-                                    <h1>3</h1>
+                                    <h1>{{$transaksi->count();}}</h1>
                                 </div>
-                                <a href="">
+                                <a href="/dataOrder">
+                                    <p class="card-text text-dark">Lihat Detail <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-right">
+                                            <polyline points="13 17 18 12 13 7"></polyline>
+                                            <polyline points="6 17 11 12 6 7"></polyline>
+                                        </svg></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card ms-3 me-3" style="width: 18rem;">
+                            <div class="card-body">
+                                <div class="card-body-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>
+                                </div>
+                                <h5 class="card-title">Total Pendapatan</h5>
+                                <div class="display-4">
+                                    <h1 id="hide">
+                                        @foreach (@$transaksi as $data)
+                                        {{$i = 0}}
+                                        {{$i += $data->biaya}}
+                                        @endforeach
+                                    </h1>
+                                    <h1>Rp{{$i}}</h1>
+                                    
+                                </div>
+                                <a href="/dataOrder">
                                     <p class="card-text text-dark">Lihat Detail <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-right">
                                             <polyline points="13 17 18 12 13 7"></polyline>
                                             <polyline points="6 17 11 12 6 7"></polyline>
@@ -104,7 +134,7 @@
                             </div>
                         </div>
 
-                        <div class="card me-3" style="width: 18rem;">
+                        <!-- <div class="card me-3" style="width: 18rem;">
                             <div class="card-body">
                                 <div class="card-body-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
@@ -112,20 +142,20 @@
                                         <circle cx="12" cy="7" r="4"></circle>
                                     </svg>
                                 </div>
-                                <h5 class="card-title">Total Jual</h5>
+                                <h5 class="card-title">Persentase Selesai</h5>
                                 <div class="display-4">
                                     <div class="progress mt-4" style="height: 30px;">
                                         <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
                                     </div>
                                 </div><br>
-                                <a href="">
+                                <a href="/dataOrder">
                                     <p class="card-text text-dark">Lihat Detail <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-right">
                                             <polyline points="13 17 18 12 13 7"></polyline>
                                             <polyline points="6 17 11 12 6 7"></polyline>
                                         </svg></p>
                                 </a>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="card me-3" style="width: 18rem;">
                             <div class="card-body">
@@ -135,11 +165,11 @@
                                         <circle cx="12" cy="7" r="4"></circle>
                                     </svg>
                                 </div>
-                                <h5 class="card-title">Jumlah Pemesan</h5>
+                                <h5 class="card-title">Jumlah Psikolog</h5>
                                 <div class="display-4">
-                                    1.200
+                                    {{$psikologs->count();}}
                                 </div>
-                                <a href="">
+                                <a href="/dataPsikolog">
                                     <p class="card-text text-dark">Lihat Detail <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-right">
                                             <polyline points="13 17 18 12 13 7"></polyline>
                                             <polyline points="6 17 11 12 6 7"></polyline>
@@ -147,6 +177,7 @@
                                 </a>
                             </div>
                         </div>
+
                     </div>
 
 
