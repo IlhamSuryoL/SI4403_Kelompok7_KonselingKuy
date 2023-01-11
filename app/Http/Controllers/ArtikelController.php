@@ -69,7 +69,7 @@ class ArtikelController extends Controller
         $store->konten = $request->konten;
         $store->image = $request->image->getClientOriginalName();
         $store->save();
-        return view('ruanginformasiKonselor',['store' => $store])->with('success', 'Berhasil ditambahkan');
+        return redirect()->intended('/homepagekonselor');
     }
 
     /**

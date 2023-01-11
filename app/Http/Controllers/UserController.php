@@ -66,7 +66,7 @@ class UserController extends Controller
         $update = transaksi::find($request->id);
         $update->status = $request->status;
         $update->save();
-        return view('db');     
+        return redirect()->intended('/db');  
     
     }
 
