@@ -117,8 +117,8 @@
                                 <h5 class="card-title">Total Pendapatan</h5>
                                 <div class="display-4">
                                     <h1 id="hide">
+                                    {{$i = 0}}
                                         @foreach (@$transaksi as $data)
-                                        {{$i = 0}}
                                         {{$i += $data->biaya}}
                                         @endforeach
                                     </h1>
